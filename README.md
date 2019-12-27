@@ -1,6 +1,6 @@
 # json-compare
 
-> Compare json objects for texists, data type, data length, value match.
+> Compare two JSON objects to determine if their data matches. Reports whether fields exists in both objects, and whether the data type, length and values match. Built on Next.js (Vue).
 
 ## Build Setup
 

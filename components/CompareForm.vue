@@ -7,7 +7,7 @@
                 <button type="submit" class="btn-primary btn"  >Compare</button>
             </div>
             </form>
-            <div class="error text-red" v-for="(item, $index) in errors" :key="$index">{{item}}</div>
+            <div class="error text-danger" v-for="(item, $index) in errors" :key="$index">{{item}}</div>
 
             <div id="results-area" :class=activeView v-if="items.length > 0">
             <p class="text-center">
@@ -60,6 +60,7 @@
 #results-area.investigate tbody tr.investigate {display: table-row;}
 </style>
 <script>
+
 
  const  tableItemsReference = [
             // { field: 'products.name', both_exist: false, type_match: false, value_match: false }, 
