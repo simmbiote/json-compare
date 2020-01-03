@@ -130,8 +130,10 @@ export default {
 
       // Determine a class name for the row. 
       result_class() {
-        if (!this.both_exists() || (!this.value_match() && !(typeof this.oldObject[this.field] === string && this.oldObject[this.field] === boolean) )) return "fail";
-        if (!this.type_match() || !this.length_match() || (!this.value_match() && (typeof this.oldObject[this.field] === string && this.oldObject[this.field] === boolean) ) ) return "investigate";
+        // Let it show "investigate"
+        if ((!this.value_match() && (typeof this.oldObject[this.field] === string && this.newObject[this.field] === boolean))) return "investigate";
+        if (!this.both_exists() || !this.value_match() ) return "fail";
+        if (!this.type_match() || !this.length_match() ) return "investigate";
         return "pass"
       }
     },
