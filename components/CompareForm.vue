@@ -131,7 +131,7 @@ export default {
       // Determine a class name for the row. 
       result_class() {
         // Let it show "investigate" if true != "true"
-        if (!this.type_match() && !this.value_match()) return "investigate";
+        if (!this.type_match() && !this.value_match() && this.both_exists()) return "investigate";
         if (!this.both_exists() || !this.value_match()) return "fail";
         if (!this.type_match() || !this.length_match()) return "investigate";
         return "pass"
