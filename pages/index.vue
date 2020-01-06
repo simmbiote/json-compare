@@ -68,13 +68,16 @@ export default {
 .links {
   padding-top: 15px;
 }
-.table-striped tbody tr.investigate {
+.table-striped tbody tr.investigate,
+.table-striped tbody tr.investigate td {
     background-color: rgb(247, 189, 82) !important;
 }
-.table-striped tbody tr.pass {
+.table-striped tbody tr.pass,
+.table-striped tbody tr.pass td {
     background-color: rgb(145, 187, 145) !important;
 }
-.table-striped tbody tr.fail {
+.table-striped tbody tr.fail,
+.table-striped tbody tr.fail td {
     background-color: rgb(240, 133, 133) !important;
 }
 
