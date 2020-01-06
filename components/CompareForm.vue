@@ -181,6 +181,7 @@ export default {
 
     compareObjects: function () {
       this.errors = [];
+  
 
       //   Validate the user input.
       try {
@@ -201,6 +202,12 @@ export default {
 
       this.errors = [];
       this.items = [];
+
+      this.failCount = 0;
+      this.investigateCount = 0;
+      this.passCount  = 0;
+      this.activeView = 'all';
+      this.count = 0;
 
       const parsedOldJson = JSON.parse(this.oldJsonRaw);
       const parsedNewJson = JSON.parse(this.newJsonRaw);

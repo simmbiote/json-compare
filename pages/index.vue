@@ -38,6 +38,8 @@ export default {
 </script>
 
 <style>
+@media print { * { -webkit-color-adjust: exact; } }
+
 .container {
   margin: 0 auto;
   justify-content: center;
@@ -67,13 +69,13 @@ export default {
   padding-top: 15px;
 }
 .table-striped tbody tr.investigate {
-    background-color: rgb(247, 189, 82);
+    background-color: rgb(247, 189, 82) !important;
 }
 .table-striped tbody tr.pass {
-    background-color: rgb(145, 187, 145);
+    background-color: rgb(145, 187, 145) !important;
 }
 .table-striped tbody tr.fail {
-    background-color: rgb(240, 133, 133);
+    background-color: rgb(240, 133, 133) !important;
 }
 
 .credits { margin-top: 40px;}
